@@ -17,10 +17,9 @@ const CreateRequest = props => {
 
   const addToRequest = async event => {
     let id = event.target.parentElement.dataset.id
-    let response
-    debugger
+    let response;
+  
     if (props.task.id) {
-      debugger
       response = await axios.put('/tasks/1', {
         product_id: id
       })
