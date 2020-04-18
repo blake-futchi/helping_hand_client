@@ -1,11 +1,15 @@
 import LazyHero from 'react-lazy-hero';
 import React from 'react';
-import { Header } from 'semantic-ui-react'
+import { Header, Segment} from 'semantic-ui-react'
 
- const Hero = () => {
+const square = {width: 225, height: 225}
+
+const Hero = () => {
   return (
     <LazyHero imageSrc="https://cdn.hipwallpaper.com/i/35/78/jhYV6A.jpg" style={{ marginTop: '-15px', opacity: 1, minHeight: '90vh'}}>
-      <Header>Get your basic needs and shopping taken care of from the comfort of your home</Header>
+      <Segment circular style ={square}>
+        <Header disabled>GET YOUR BASIC NEEDS AND SHOPPING TAKEN CARE OF FROM THE COMFORT OF YOUR HOME</Header>
+      </Segment>
     </LazyHero>
   );
 }
