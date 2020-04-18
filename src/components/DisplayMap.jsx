@@ -60,9 +60,10 @@ class MapContainer extends Component {
             onClick={onMarkerClick.bind(this)}
           />
         ))}
-        {}
-        <InfoWindow onClose={this.onInfoWindowClose}>
-          <div>{}</div>
+         <InfoWindow 
+         marker={this.state.activeMarker}
+         visible={this.state.showingInfoWindow}
+         onClose={this.onInfoWindowClose}>
         </InfoWindow>
       </Map>
     )
