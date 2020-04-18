@@ -5,7 +5,7 @@ const Footer = () => {
     return (
     <Segment style={{ marginTop: '-15px'}}>
       <Grid>
-        <Grid.Column width={10}><i class="kickstarter icon"></i><span>Find us on Kickstarter</span></Grid.Column>
+        <Grid.Column textAlign='center'><i class="kickstarter icon"></i><span>Find us on Kickstarter</span></Grid.Column>
       </Grid>
     </Segment>
   )
