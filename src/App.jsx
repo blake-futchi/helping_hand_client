@@ -6,16 +6,20 @@ import UserLogin from './components/UserLogin'
 import RegisterUser from './components/RegisterUser'
 import ClaimTask from './components/ClaimTask';
 import { Grid } from 'semantic-ui-react'
+import HeroImage from './components/HeroImage'
+import Footer from './components/Footer'
 
 const App = props => {
   return (
     <>
       <Header />
+      <HeroImage />
       <CreateRequest />
       <ClaimTask />
       {props.showLogin && <UserLogin/>}
       {props.showRegister && <RegisterUser/>}
       <Grid.Column align='center' id='success-message'>{props.message}</Grid.Column>
+      <Footer />
     </>
   )
 }
