@@ -109,7 +109,7 @@ const CreateRequest = props => {
           </div>
           <div className='margin'>
             <Button
-              color='blue'
+              color='green' tertiary
               id='addressConfirm'
               onClick={() => getCoordsFromAddress(props, dispatch)}
               style={{ marginTop: '10px' }}
@@ -137,6 +137,7 @@ const CreateRequest = props => {
                 id={product.id}
                 key={product.id}
                 onClick={addToRequest.bind(this)}
+                style={{marginLeft: '10px'}}
               >
                 Add
               </Button>
