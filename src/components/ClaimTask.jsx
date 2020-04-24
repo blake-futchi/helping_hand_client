@@ -79,7 +79,7 @@ const ClaimTask = props => {
       {claimButton}
       <Grid>
         <Grid.Column width={10} height={16}>{mapDisplay}</Grid.Column>
-        <Grid.Column floated='right' width={6} id='request-list'>
+        <Grid.Column floated='right' width={6} id='request-list' align="center">
           <List animated divided className='productList'>
             {requestDisplay}
           </List>

@@ -113,8 +113,9 @@ const CreateRequest = props => {
             <Button
               id='addressConfirm'
               onClick={() => getCoordsFromAddress(props, dispatch)}
+              style={{ marginTop: '10px' }}
             >
-              confirm address
+              Confirm Address
             </Button>
           </div>
         </Grid.Column>
@@ -179,9 +180,9 @@ const CreateRequest = props => {
     <>
       <div>
         {createButton}
-        <Container id='task-name'>{nameInput}</Container>
-        <Container id='task-phone'>{phoneInput}</Container>
-        <Container id='task-address'>{displayAddressInput}</Container>
+        <Container id='task-name' style={{ marginBottom: '10px' }}>{nameInput}</Container>
+        <Container id='task-phone' style={{ marginBottom: '10px' }}>{phoneInput}</Container>
+        <Container id='task-address' style={{ marginBottom: '10px' }}>{displayAddressInput}</Container>
         <List id='product-list'>{productDisplay}</List>
         <Container id='request-list'>{requestProductDisplay}</Container>
         <Container id='confirm-button'>{confirmButton}</Container>

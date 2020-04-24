@@ -102,7 +102,7 @@ const ProfilePage = props => {
             </Grid.Column>
             <Grid.Column align='center'>
               <Container style={{ marginTop: '2px' }}>
-                Actice Tasks
+                Active Tasks
                 <List>{viewProfileClaimedTasks}</List>
               </Container>
             </Grid.Column>

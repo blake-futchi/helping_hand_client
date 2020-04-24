@@ -17,6 +17,7 @@ function Display (props) {
             onClick={() =>
               dispatch({ type: 'SHOW_MAP', showRequestForm: true })
             }
+            style={{ marginBottom: '10px' }}
           >
             Offer Help
           </Button>
@@ -33,6 +34,7 @@ function Display (props) {
           onClick={() =>
             dispatch({ type: 'SHOW_REQUEST_FORM', showRequestForm: true })
           }
+          style={{ marginBottom: '10px' }}
         >
           Create your request
         </Button>
