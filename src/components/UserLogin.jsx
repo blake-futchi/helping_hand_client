@@ -29,7 +29,7 @@ const Login = props => {
               autoComplete='new-password'
             />
           </Form.Field>
-          <Button id='login-button' type='submit' value='Login'>
+          <Button id='login-button' type='submit' value='Login' style={{backgroundColor: '#e67276', color: 'white'}}>
             Login
           </Button>
         </Form>

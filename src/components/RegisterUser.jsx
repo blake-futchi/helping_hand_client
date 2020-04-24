@@ -42,7 +42,11 @@ const RegisterUser = props => {
             ></input>
           </Form.Field>
           <Container textAlign='center'>
-            <Button id='register-button' type='submit'>
+            <Button 
+              id='register-button' 
+              type='submit'
+              style={{backgroundColor: '#e67276', color: 'white'}}
+              >
               Register
             </Button>
           </Container>

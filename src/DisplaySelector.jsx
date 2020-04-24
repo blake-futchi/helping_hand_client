@@ -38,7 +38,7 @@ function Display (props) {
           }
           style={{ marginBottom: '10px' }}
         >
-          Create your Request
+          Create Request
         </Button>
       </Grid.Column>
     )
