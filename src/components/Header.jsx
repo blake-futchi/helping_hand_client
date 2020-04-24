@@ -11,10 +11,18 @@ const Header = props => {
   if (authenticated) {
     buttons = (
       <>
-        <Button id='Profile' onClick={() => props.dispatch({ type: VIEW_PROFILE })}>
+        <Button 
+          id='Profile' 
+          style = {{backgroundColor: 'white'}}
+          onClick={() => props.dispatch({ type: VIEW_PROFILE })}
+        >
           Profile
         </Button>
-        <Button id='Logout' onClick={() => onLogout(dispatch)}>
+        <Button 
+          id='Logout' 
+          onClick={() => onLogout(dispatch)}
+          style = {{backgroundColor: '#4f5f76', color: 'white'}}
+        >
           Logout
         </Button>
       </>
@@ -23,7 +31,7 @@ const Header = props => {
     buttons = (
       <>
         <Button
-          style = {{backgroundColor: '#fff5d7'}}
+          style = {{backgroundColor: 'white'}}
           name='login'
           id='login'
           onClick={() => props.dispatch({ type: LOGIN_USER })}
@@ -31,7 +39,7 @@ const Header = props => {
           Login
         </Button>
         <Button
-          style = {{backgroundColor: 'white'}}
+          style = {{backgroundColor: '#4f5f76', color: 'white'}}
           name='register'
           id='register'
           onClick={() => props.dispatch({ type: REGISTER_USER })}
