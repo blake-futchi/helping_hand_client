@@ -77,8 +77,7 @@ const CreateRequest = props => {
             <Input
               id='nameInput'
               onBlur={onChangeName.bind(this)}
-              placeholder='write something here'
-              label='Name'
+              placeholder='Enter Your Name'
             ></Input>
           </div>
         </Grid.Column>
@@ -91,8 +90,7 @@ const CreateRequest = props => {
             <Input
               id='phoneInput'
               onBlur={onChangePhone.bind(this)}
-              placeholder='write something here'
-              label='Phone'
+              placeholder='Enter Phone Number'
             ></Input>
           </div>
         </Grid.Column>
@@ -101,16 +99,17 @@ const CreateRequest = props => {
     displayAddressInput = (
       <>
         <Grid.Column key='addressInputGrid' align='center'>
-          <div>
+          <div className='margin'>
             <Input
+              color='blue'
               id='addressInput'
               onBlur={onChangeAddress.bind(this)}
-              placeholder='write something here'
-              label='Address'
+              placeholder='Enter Delivery Address'
             ></Input>
           </div>
-          <div>
+          <div className='margin'>
             <Button
+              color='blue'
               id='addressConfirm'
               onClick={() => getCoordsFromAddress(props, dispatch)}
               style={{ marginTop: '10px' }}
@@ -180,7 +179,7 @@ const CreateRequest = props => {
     <>
       <div>
         {createButton}
-        <Container id='task-name' style={{ marginBottom: '10px' }}>{nameInput}</Container>
+        <Container id='task-name' style={{ marginBottom: '10px', marginTop: '10px'}}>{nameInput}</Container>
         <Container id='task-phone' style={{ marginBottom: '10px' }}>{phoneInput}</Container>
         <Container id='task-address' style={{ marginBottom: '10px' }}>{displayAddressInput}</Container>
         <List id='product-list'>{productDisplay}</List>

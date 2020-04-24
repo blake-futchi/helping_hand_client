@@ -53,7 +53,7 @@ const ProfilePage = props => {
       return (
         <>
           <List.Content style={{ marginTop: '2px' }}>
-            <Card>
+            <Card style = {{marginBottom: '15px', marginTop: '10px'}}>
               <Card.Content>
                 <Card.Meta>Deliver to: {createdTask.address}</Card.Meta>
                 <Card.Meta>Status: {createdTask.status}</Card.Meta>
@@ -103,7 +103,7 @@ const ProfilePage = props => {
             <Grid.Column align='center'>
               <Container style={{ marginTop: '2px' }}>
                 Active Tasks
-                <List>{viewProfileClaimedTasks}</List>
+                <List style={{ marginTop: '10px', marginBottom: '15px'}}>{viewProfileClaimedTasks}</List>
               </Container>
             </Grid.Column>
           </Grid>

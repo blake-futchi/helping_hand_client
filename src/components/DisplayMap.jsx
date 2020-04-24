@@ -20,9 +20,7 @@ const MapContainer = props => {
   let taskProducts
 
   if (selectedPlace.id) {
-    showRequest = props.requests.find(
-      request => request.id === selectedPlace.id
-    )
+    showRequest = props.requests.find(request => request.id === selectedPlace.id)
     taskProducts = showRequest.products.map(product => {
       return (
         <List.Item

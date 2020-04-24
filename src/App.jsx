@@ -19,9 +19,6 @@ const App = props => {
     <>
       <Header />
       <DisplaySelector />
-      <Grid.Column align='center' id='success-message'>
-        {props.message}
-      </Grid.Column>
       {props.showProfile && <ProfilePage />}
       {props.showHero && <HeroImage />}
       {props.showRequestForm && <CreateRequest />}

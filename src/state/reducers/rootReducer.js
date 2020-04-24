@@ -8,8 +8,7 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         ...action.payload,
         showHelpMap: false,
-        message: false,
-        showProfile: false,
+        message: "",
       };
     case actionTypes.UPDATE_REQUEST:
       return {
@@ -20,7 +19,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         showRequestForm: action.showRequestForm,
-        showHelpMap: false,
+        showHelpMap: "",
         message: "",
       };
     case actionTypes.RESET_PAGE:
@@ -83,7 +82,6 @@ const rootReducer = (state = initialState, action) => {
         showHelpMap: true,
         showRequestForm: false,
         message: "",
-        showProfile: false,
       };
     case actionTypes.SAVE_REQUESTS:
       return {
